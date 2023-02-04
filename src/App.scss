@@ -1,0 +1,10 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./Styles/_variables";
+@import "./Sections/Navbar/Navbar.scss";
+@import "./Sections/Home/Home.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./Styles/_variables";
-@import "./Sections/Navbar/Navbar.scss";
 @import "./Sections/Home/Home.scss";
+@import "./Components/Sidebar.scss";
 
 * {
     margin: 0;

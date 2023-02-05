@@ -35,16 +35,21 @@ export const Sidebar = () => {
                         <span></span>
                     </button>
                 </div>
-                <div className="nav-menu">{menuItems.map(({text, icon}) =>(
-                    <a 
-                        href="#" 
-                        className={isExpended ? "menu-item" : "menu-item menu-item-NX"}
-                    >
-                        <img src={icon} alt="" />
-                        {isExpended && <p>{text}</p>}
-                        {!isExpended && <div className="tooltip">{text}</div>}
-                    </a>
-                ))}</div>
+                <div className="nav-menu">
+                    {menuItems.map(({text, icon}) =>(
+                        <a 
+                            href="#" 
+                            className={isExpended ? "menu-item" : "menu-item menu-item-NX"}
+                        >
+                            <img src={icon} alt="" />
+                            {isExpended && <p>{text}</p>}
+                            {!isExpended && <div className="tooltip">{text}</div>}
+                        </a>
+                    ))}
+                </div>
+            </div>
+            <div className="nav-footer">
+                <div className="nav-details"></div>
             </div>
         </div>
     )

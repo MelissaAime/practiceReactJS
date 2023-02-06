@@ -49,7 +49,15 @@ export const Sidebar = () => {
                 </div>
             </div>
             <div className="nav-footer">
-                <div className="nav-details"></div>
+                {isExpended && (
+                    <div className="nav-details">
+                        <img src="" alt="" />
+                        <div className="nav-footer-info">
+                            <p className="nav-footer-user-name">User Name</p>
+                            <p className="nav-footer-user-position">Admin</p>
+                        </div>
+                    </div>
+                )}
             </div>
         </div>
     )

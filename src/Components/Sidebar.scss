@@ -14,7 +14,8 @@
 .nav-upper,
 .nav-heading,
 .nav-menu,
-.menu-item {
+.menu-item,
+.nav-footer {
     display: grid;
 }
 
@@ -61,14 +62,14 @@
 
 .hamburger-in:hover span:nth-child(1) {
 	width: 25px;
-    transform: translate(-3px, 8px) rotate(30deg);
+    transform: translate(-3px, 9px) rotate(30deg);
 }
 .hamburger-in:hover span:nth-child(2) {
 	display: none;
 }
 .hamburger-in:hover span:nth-child(3) {
 	width: 25px;
-    transform: translate(-3px, -8px) rotate(-30deg);
+    transform: translate(-3px, -9px) rotate(-30deg);
 }
 
 
@@ -133,3 +134,31 @@
     border: 2px solid var(--light);
     background-color: var(--dark);
 }
+
+.nav-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--dark);
+}
+
+.nav-details{
+    display: flex;
+}
+
+.nav-detail img{
+    width: 50px;
+    padding: 0 20px;
+}
+
+.nav-footer-user-name{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.nav-footer-user-position{
+    margin-top: -15px;
+    color: var(--gray);
+}
+

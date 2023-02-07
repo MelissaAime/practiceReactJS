@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { BsHouseDoor, BsPerson, BsChatSquareText } from "react-icons/bs";
+
 
 export const Sidebar = () => {
     const [isExpended, setExpendedState] = useState(false);
@@ -6,12 +8,16 @@ export const Sidebar = () => {
     const menuItems = [
         {
             text: "Home",
-            icon: "",
+            icon: <BsHouseDoor/>,
         },
         {
             text: "Profile",
-            icon: "",
+            icon: <BsPerson/>,
         },
+        {
+            text: "Message",
+            icon: <BsChatSquareText/>,
+        }
     ]
 
     return (
@@ -41,9 +47,8 @@ export const Sidebar = () => {
                             href="#" 
                             className={isExpended ? "menu-item" : "menu-item menu-item-NX"}
                         >
-                            <img src={icon} alt="" />
+                            <span>{icon}</span>
                             {isExpended && <p>{text}</p>}
-                            {!isExpended && <div className="tooltip">{text}</div>}
                         </a>
                     ))}
                 </div>

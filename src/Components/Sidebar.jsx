@@ -26,7 +26,7 @@ export const Sidebar = () => {
                 <div className="nav-heading">
                     {isExpended && (
                         <div className="nav-brand">
-                            <img src="#" alt="Logo" />
+                            <img src="https://img.icons8.com/plasticine/100/null/flower-doodle.png" alt="Logo"/>
                             <h2>Name</h2>
                         </div>
                     )}
